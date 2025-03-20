@@ -2,5 +2,5 @@
   command = "pnpm run build"
   publish = "build"
 
-[build.environment]
-  NODE_VERSION = "18.12.0"
+[context.production.environment]
+  NODE_VERSION = "15"
