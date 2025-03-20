@@ -1,8 +1,4 @@
 [build]
-  command = "pnpm install && pnpm run build"
-  publish = "build"
-  environment = { NODE_VERSION = "16.13.0", NPM_FLAGS = "--force" }
-
-[build]
   command = "corepack enable && pnpm install && pnpm run build"
   publish = "build"
+  environment = { NODE_VERSION = "16.13.0", NPM_FLAGS = "--force" }
