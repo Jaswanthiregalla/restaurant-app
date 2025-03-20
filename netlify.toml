@@ -1,4 +1,15 @@
 [build]
-  command = "corepack enable && pnpm install && pnpm run build"
+  command = """
+  if [[ "$NODE_VERSION" == "14"* ]]; then
+    corepack prepare pnpm@6 --activate;
+  elif [[ "$NODE_VERSION" == "16"* ]]; then
+    corepack prepare pnpm@7 --activate;
+  else
+    corepack prepare pnpm@latest --activate;
+  fi
+  pnpm install && pnpm run build
+  """
   publish = "build"
-  environment = { NODE_VERSION = "14", NODE_OPTIONS = "--openssl-legacy-provider", NPM_FLAGS = "--force" }
+
+[build.environment]
+  NODE_VERSION = "16.20.0"  # Example, change as needed
