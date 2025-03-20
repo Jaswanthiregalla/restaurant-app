@@ -1,0 +1,22 @@
+.menu-tab-button {
+  border: none;
+  background-color: transparent;
+
+  color: #4d4b4b;
+}
+.menu-category-name {
+  font-size: 22px;
+  font-weight: 580;
+  min-width: 200px;
+  max-width: 300px;
+
+  margin: 10px;
+}
+.color-menu-text {
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: #ed4726;
+  color: #f17a7a;
+}

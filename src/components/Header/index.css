@@ -1,0 +1,42 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-icon {
+  font-size: 40px;
+  color: gray;
+}
+.cafe-heading {
+  font-family: 'Roboto';
+  font-size: 28px;
+}
+.count-value {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  right: -1px;
+  margin-bottom: 24px;
+}
+.icon-count-container {
+  display: flex;
+  align-items: center;
+}
+.orders-text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .orders-text {
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(123, 120, 120);
+    padding-right: 10px;
+  }
+}

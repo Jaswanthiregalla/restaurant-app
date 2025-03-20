@@ -1,0 +1,143 @@
+.dish-item-card {
+  display: flex;
+  border-style: solid;
+  align-items: flex-start;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #9d9898;
+}
+
+.circle-container {
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #337233;
+  background-color: #e4e2e2;
+  width: 32px;
+  height: 32px;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 4px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #337233;
+}
+.high-rate-dish {
+  border-color: rgb(241, 32, 32);
+}
+.high-rate-circle {
+  background-color: red;
+}
+.dish-content-container {
+  padding: 0px 5px 4px 8px;
+  margin-left: 10px;
+  width: 50%;
+}
+.dish-name {
+  font-size: 16px;
+}
+.dish-currency {
+  color: #303232;
+  font-weight: 500;
+  font-size: 14px;
+}
+.dish-description {
+  color: #948f8f;
+  font-weight: 500;
+  font-size: 14px;
+}
+.quantity-container {
+  display: flex;
+  background-color: green;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  border-radius: 18px;
+}
+.button-control {
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  border-style: none;
+  outline: none;
+}
+.quantity {
+  color: #ffffff;
+  font-size: 16px;
+}
+.not-available-text {
+  color: #f86b6b;
+  font-weight: 500;
+  font-size: 14px;
+}
+.customization-text {
+  color: #7070f3;
+  margin-bottom: 0px;
+  font-weight: 550;
+}
+
+.dish-image {
+  height: 50px;
+  max-width: 100%;
+}
+
+.cal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.calorie-num {
+  color: #f68c21;
+  font-weight: 540;
+}
+.calorie-num-sm {
+  align-self: center;
+}
+.calorie-num-lg {
+  display: none;
+}
+.content-card {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .calorie-num-sm {
+    display: none;
+  }
+  .calorie-num-lg {
+    display: flex;
+  }
+  .dish-image {
+    width: 160px;
+    height: 160px;
+  }
+  .cal-card {
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .calories-num {
+    font-size: 18px;
+  }
+  .dish-name {
+    font-size: 26px;
+  }
+  .dish-currency {
+    font-size: 18px;
+  }
+  .dish-description {
+    font-size: 18px;
+  }
+}

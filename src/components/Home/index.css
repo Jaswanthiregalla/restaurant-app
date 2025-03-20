@@ -1,0 +1,11 @@
+.menu-tabs-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  min-width: 100%;
+  overflow-x: auto;
+}
+.dish-items-container {
+  list-style-type: none;
+  padding: 10px;
+}
