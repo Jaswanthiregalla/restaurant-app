@@ -1,5 +1,6 @@
 [build]
   command = "corepack enable && pnpm install && pnpm run build"
   publish = "build"
-  environment = { NODE_VERSION = "18.17.1", NPM_FLAGS = "--force" }
+  environment = { NODE_VERSION = "18.17.1", NODE_OPTIONS = "--openssl-legacy-provider", NPM_FLAGS = "--force" }
+
 
