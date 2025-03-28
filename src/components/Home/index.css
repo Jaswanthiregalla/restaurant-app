@@ -9,3 +9,24 @@
   list-style-type: none;
   padding: 10px;
 }
+.products-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-dishes-img {
+  width: 50%;
+}
+.no-dishes-text {
+  color: grey;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}

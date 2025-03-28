@@ -21,4 +21,5 @@ const DishTab = props => {
     </li>
   )
 }
+
 export default DishTab

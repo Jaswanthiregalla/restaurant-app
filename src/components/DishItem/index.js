@@ -2,27 +2,18 @@ import {Component} from 'react'
 import './index.css'
 
 class DishItem extends Component {
-  state = {quantity: 0}
-
   onIncrease = () => {
-    this.setState(prevState => ({quantity: prevState.quantity + 1}))
-    const {incrementCartCount} = this.props
-    incrementCartCount()
+    const {dish, updatedDishQuantities} = this.props
+    updatedDishQuantities(dish.dishId, 1)
   }
 
   onDecrease = () => {
-    const {decrementCartCount} = this.props
-    const {quantity} = this.state
-
-    if (quantity > 0) {
-      this.setState({quantity: quantity - 1})
-      decrementCartCount()
-    }
+    const {dish, updatedDishQuantities} = this.props
+    updatedDishQuantities(dish.dishId, -1)
   }
 
   render() {
-    const {dish} = this.props
-    const {quantity} = this.state
+    const {dish, quantity} = this.props
 
     const {
       dishName,
